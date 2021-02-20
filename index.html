@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Password Generator</title>
+    <script src="main.js"></script>
+</head>
+
+<body>
+    <div class="container" id="password_generator">
+        <h1 id="password_h1">Password</h1>
+        <div>
+            <input type="checkbox" id="lowercase_checkbox" name="lowercase">
+            <label for="lowercase">Include Lowercase</label>
+        </div>
+        <div>
+            <input type="checkbox" id="uppercase_checkbox" name="uppercase">
+            <label for="uppercase">Include Uppercase</label>
+        </div>
+        <div>
+            <input type="checkbox" id="digits_checkbox" name="digits">
+            <label for="digits">Include Digits</label>
+        </div>
+        <div>
+            <input type="checkbox" id="punctuation_checkbox" name="punctuation">
+            <label for="punctuation">Include Punctuation</label>
+        </div>
+        <div>
+            <label for="length">Length</label>
+            <input type="range" id="length_slider" name="length" step="1" min="6" max="24">
+        </div>
+        <div>
+            <button id="generate_button">Generate</button>
+        </div>
+    </div>
+</body>
+
+</html>
