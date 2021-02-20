@@ -1,4 +1,4 @@
-function generate_password(length, lowercase, uppercase, punctuation, digits) {
+function generate_password(length, lowercase, uppercase, digits, punctuation) {
     let available_characters = ''
 
     if (lowercase) {
