@@ -14,8 +14,8 @@ function generate_password(length, lowercase, uppercase, digits, punctuation) {
         available_characters += '0123456789'
     }
 
-    if (!available_characters) {
-        return ''
+    if (!available_characters || !length) {
+        return 'Password'
     }
     
     let password = ''

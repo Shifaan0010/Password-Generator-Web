@@ -7,33 +7,36 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Password Generator</title>
     <script src="main.js"></script>
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-    <div class="container" id="password_generator">
-        <h1 id="password_h1">Password</h1>
-        <div>
-            <input type="checkbox" id="lowercase_checkbox" name="lowercase" checked>
-            <label for="lowercase">Include Lowercase</label>
-        </div>
-        <div>
-            <input type="checkbox" id="uppercase_checkbox" name="uppercase">
-            <label for="uppercase">Include Uppercase</label>
-        </div>
-        <div>
-            <input type="checkbox" id="digits_checkbox" name="digits">
-            <label for="digits">Include Digits</label>
-        </div>
-        <div>
-            <input type="checkbox" id="punctuation_checkbox" name="punctuation">
-            <label for="punctuation">Include Punctuation</label>
-        </div>
-        <div>
-            <label for="length">Length</label>
-            <input type="range" id="length_slider" name="length" step="1" min="6" max="24" value="8">
-        </div>
-        <div>
-            <button id="generate_button">Generate</button>
+    <div class="center_align_vertical fullscreen" id="password_generator">
+        <div class="container">
+            <h1 id="password_h1">Password</h1>
+            <div class="small_margin">
+                <button id="generate_button">Generate</button>
+            </div>
+            <div class="center_align_vertical small_margin">
+                <input type="checkbox" id="lowercase_checkbox" name="lowercase" checked>
+                <label for="lowercase">Include Lowercase</label>
+            </div>
+            <div class="center_align_vertical small_margin">
+                <input type="checkbox" id="uppercase_checkbox" name="uppercase">
+                <label for="uppercase">Include Uppercase</label>
+            </div>
+            <div class="center_align_vertical small_margin">
+                <input type="checkbox" id="digits_checkbox" name="digits">
+                <label for="digits">Include Digits</label>
+            </div>
+            <div class="center_align_vertical small_margin">
+                <input type="checkbox" id="punctuation_checkbox" name="punctuation">
+                <label for="punctuation">Include Punctuation</label>
+            </div>
+            <div class="center_align_vertical small_margin">
+                <label for="length">Length</label>
+                <input type="range" id="length_slider" name="length" step="1" min="6" max="24" value="8">
+            </div>
         </div>
     </div>
 </body>
