@@ -102,6 +102,5 @@ input[type="range"]::-webkit-slider-thumb:hover {
 
 .center_align_vertical {
   display: flex;
-  flex-direction: row;
   align-items: center;
 }
